@@ -1,0 +1,24 @@
+Installing AAPP
+===============
+
+Tested on dragon - el6.x86_64
+
+
+Install Dependencies
+--------------------
+
+### JASPER - http://www.ece.uvic.ca/~frodo/jasper/
+
+### GRIBAPI - http://www.ecmwf.int/products/data/software/grib_api.html
+
+### BUFRDC - http://www.ecmwf.int/products/data/software/bufr.html
+
+### HDF5 - http://www.hdfgroup.org/HDF5/
+
+
+
+Building AAPP
+-------------
+
+ftp://ftp.metoffice.gov.uk/
+
