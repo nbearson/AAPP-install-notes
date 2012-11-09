@@ -46,7 +46,7 @@ Building AAPP
 
 Get the AAPP code from: ftp://ftp.metoffice.gov.uk/, must register to get a username and password.
 
-1. Get 7.1/AAPP_7.1.tgz and extract it. Then put the following script in AAPP_7 and run it:
+* Get 7.1/AAPP_7.1.tgz and extract it. Then put the following script in AAPP_7 and run it:
 
 ```bash
 #!/usr/bin/env sh
@@ -67,21 +67,21 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${hdf}/lib
   --external-includes="-I$hdf/include -I$grib_api/include"
 ```
 
-2. Copy 7.2/AAPP_update_7_2.tgz into AAPP_7, extract in place.
+* Copy 7.2/AAPP_update_7_2.tgz into AAPP_7, extract in place.
 
-3. Copy 7.3/AAPP_update_7_3.tgz into AAPP_7, extract in place.
+* Copy 7.3/AAPP_update_7_3.tgz into AAPP_7, extract in place.
 
-4. Do the same with any further updates, 7.4 is on the horizon.
+* Do the same with any further updates, 7.4 is on the horizon.
 
-5. Run `make install`
+* Run `make install`
 
 
 Installing OPS-LRS for IASI Processing
 --------------------------------------
 
-1. Grab OPS-LRS from the same FTP site as AAPP
+* Grab OPS-LRS from the same FTP site as AAPP
 
-2. Build the two libraries in external_libs:
+* Build the two libraries in external_libs:
 ```bash
 echo "Installing xerces..."
 tar zxvf xerces-c-src1_7_0.tar.gz
@@ -92,6 +92,10 @@ cd src/xercesc
 sh runConfigure -p linux -c gcc -x g++ -r pthread -P $HOME/opt
 make ; make install
 cd ..
+<<<<<<< HEAD
+=======
+########
+>>>>>>> origin/master
 echo "Installing fftw..."
 tar xzvf fftw-3.0.1.tgz
 cd fftw-3.0.1
@@ -99,20 +103,20 @@ cd fftw-3.0.1
 make; make install
 ```
 
-3. Install OPS-LRS itself.
+* Install OPS-LRS itself.
 
-Change back to a directory with the OPS-LRS code, ie:
-OPS-LRS/OPS-LRS_V6-0+p12/, then run the following (note the 
-site-id used below is likely incorrect)
+  Change back to a directory with the OPS-LRS code, ie:
+  OPS-LRS/OPS-LRS_V6-0+p12/, then run the following (note the 
+  site-id used below is likely incorrect)
 
-```bash
-tar xzf OPS_V6-0+p12-AAPP-sl-20120618.tgz
-cd OPS_V6-0+p12-AAPP-sl-20120618
-./configure --aapp-prefix=$HOME/AAPP --xrcs-prefix=$HOME/opt
---fftw-prefix=$HOME/opt --arch=Linux-gfortran --prefix=$HOME/opt --site-id=UWM
---nthreads=2
-make; make install
-```
+  ```bash
+  tar xzf OPS_V6-0+p12-AAPP-sl-20120618.tgz
+  cd OPS_V6-0+p12-AAPP-sl-20120618
+  ./configure --aapp-prefix=$HOME/AAPP --xrcs-prefix=$HOME/opt \
+  --fftw-prefix=$HOME/opt --arch=Linux-gfortran --prefix=$HOME/opt --site-id=UWM \
+  --nthreads=2
+  make; make install
+  ```
 
 
 AAPP Config Notes
