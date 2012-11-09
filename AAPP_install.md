@@ -24,10 +24,10 @@ make install
 ```
 
 ### BUFRDC - http://www.ecmwf.int/products/data/software/bufr.html
-```bash
 First line in tables_tools/check_tables.sh assumes `/usr/bin/sh`
 changed it to `/usr/bin/env sh`
 
+```bash
 ./build_library
      use gfortran
      don't use 64 bit reals (makes lib named libbufrR64)
@@ -92,7 +92,6 @@ cd src/xercesc
 sh runConfigure -p linux -c gcc -x g++ -r pthread -P $HOME/opt
 make ; make install
 cd ..
-
 echo "Installing fftw..."
 tar xzvf fftw-3.0.1.tgz
 cd fftw-3.0.1
