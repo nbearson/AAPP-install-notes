@@ -92,10 +92,6 @@ cd src/xercesc
 sh runConfigure -p linux -c gcc -x g++ -r pthread -P $HOME/opt
 make ; make install
 cd ..
-<<<<<<< HEAD
-=======
-########
->>>>>>> origin/master
 echo "Installing fftw..."
 tar xzvf fftw-3.0.1.tgz
 cd fftw-3.0.1
