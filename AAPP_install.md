@@ -71,7 +71,9 @@ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${hdf}/lib
 
 * Copy 7.3/AAPP_update_7_3.tgz into AAPP_7, extract in place.
 
-* Do the same with any further updates, 7.4 is on the horizon.
+* Copy 7.4/AAPP_update_7_4.tgz into AAPP_7, extract in place.
+
+* Noticing a pattern? Likely do the same with any further updates...
 
 * Run `make install`
 
