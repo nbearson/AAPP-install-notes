@@ -1,4 +1,7 @@
 #! /usr/bin/env sh
+#
+# Assumes install in $HOME/AAPP, build in $HOME/AAPPbuild
+#
 
 export AAPP_PREFIX=$HOME/AAPP
 export LD_LIBRARY_PATH=$HOME/opt/lib
